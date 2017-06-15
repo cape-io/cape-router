@@ -8,6 +8,10 @@
     "prepublish": "npm run compile",
     "test": "babel-tape-runner src/*spec.js"
   },
+  "repository": {
+    "url": "git@github.com:cape-io/cape-routes.git",
+    "type": "git"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-plugin-lodash": "^3.2.11",
