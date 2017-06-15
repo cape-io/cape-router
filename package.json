@@ -9,13 +9,15 @@
     "test": "babel-tape-runner src/*spec.js"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-plugin-lodash": "^3.2.11",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "babel-tape-runner": "^2.0.1",
     "eslint": "^4.0.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.3.0"
+    "eslint-plugin-import": "^2.3.0",
+    "tape": "^4.6.3"
   },
   "dependencies": {
     "cape-select": "^2.4.0",
