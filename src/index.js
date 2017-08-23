@@ -1,5 +1,4 @@
-import { partial } from 'lodash'
-import { flow, get } from 'lodash/fp'
+import { flow, get, partial } from 'lodash/fp'
 import { createSelector } from 'reselect'
 import { getProps, select } from 'cape-select'
 import { selectActiveKey } from 'redux-history-sync'
@@ -11,7 +10,9 @@ export const routeParam = partial(select, routeParams)
 // Pass in the state object and return some info about a "route".
 // selectActiveKeyDefault() is a helper function to grab the current location info.
 export const routingSelector = createSelector(
-  selectRoutes, selectActiveKey, routeInfoSelector
+  selectRoutes,
+  flow(get('history'), selectActiveKey),
+  routeInfoSelector
 )
 export const getRoute = select(routingSelector, 'route')
 export const getRouteId = select(getRoute, 'id')
