@@ -1,4 +1,5 @@
-import { flow, get, partial } from 'lodash/fp'
+import { partial } from 'lodash'
+import { flow, get } from 'lodash/fp'
 import { createSelector } from 'reselect'
 import { getProps, select } from 'cape-select'
 import { selectActive } from 'redux-history-sync'
