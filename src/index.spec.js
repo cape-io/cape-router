@@ -12,3 +12,10 @@ test('routeParam', (t) => {
   t.equal(id, 'foo')
   t.end()
 })
+const state = {
+  history: {},
+  locInfo: {},
+}
+test('routingSelector', (t) => {
+  t.end()
+})
